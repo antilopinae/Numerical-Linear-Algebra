@@ -23,6 +23,20 @@ target_sources(iterative_methods
 
 target_link_libraries(iterative_methods PUBLIC Eigen3::Eigen)
 
+include(Optimized)
+Optimized(iterative_methods)
+
+include(Coverage)
+CleanCoverage(iterative_methods)
+
+include(Format)
+Format(iterative_methods .)
+
+include(CppCheck)
+# AddCppCheck(iterative_methods)
+
+include(Doxygen)
+Doxygen(iterative_methods modules/2-iterative_methods)
 
 
 
