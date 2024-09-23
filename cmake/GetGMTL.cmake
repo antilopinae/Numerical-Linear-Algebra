@@ -22,10 +22,6 @@ FetchContent_Declare(gmtl
   SOURCE_DIR      ${GMTL_CMAKE_GMTL_DEP_DIR}
 )
 
-option(gmtl_ENABLE_INSTALL "" OFF)
-option(gmtl_BUILD_EXAMPLES "" OFF)
-option(gmtl_BUILD_DOCS "" OFF)
-
 FetchContent_GetProperties(gmtl)
 
 if(NOT gmtl_POPULATED)
@@ -90,3 +86,10 @@ elseif(WIN32)
       WIN32_LEAN_AND_MEAN
   )
 endif()
+
+option(gmtl_ENABLE_INSTALL "" OFF)
+option(gmtl_BUILD_EXAMPLES "" OFF)
+option(gmtl_BUILD_DOCS "" OFF)
+
+FetchContent_MakeAvailable(gmtl)
+
