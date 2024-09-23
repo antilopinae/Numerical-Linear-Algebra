@@ -6,6 +6,7 @@ Numerical linear algebra is the intersection of numerical analysis and linear al
 
 A norm is a generalization of length and is used to measure the size of a vector or a matrix.
 
+
 ## Calc Console
 
 Calc Console is a simple example - calculator that adds two numbers in a

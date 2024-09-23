@@ -1,4 +1,4 @@
-set(Eigen_CMAKE_Eigen_TAG "132f281f501380faeba1b5b1fe7e4f237099c2a3") #3.4.0 - last version
+set(Eigen_CMAKE_Eigen_TAG "3.4.0") #3.4.0 - last version
 set(Eigen_CMAKE_Eigen_SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/extern)
 
 if(NOT DEFINED Eigen_CMAKE_Eigen_TAG)

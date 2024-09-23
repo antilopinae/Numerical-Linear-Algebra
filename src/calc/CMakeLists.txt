@@ -3,6 +3,9 @@ target_include_directories(calc_static INTERFACE
   "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
   "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>"
 )
+
+target_link_libraries(calc_static PRIVATE iterative_methods)
+
 set_target_properties(calc_static PROPERTIES
     PUBLIC_HEADER src/calc/include/calc/calc.h
     POSITION_INDEPENDENT_CODE 1

@@ -27,6 +27,8 @@ Component getTui() {
     gmtl::Matrix22f test_matrix;
     test_matrix.set(1, 4, 3, 4);
 
+    Calc::TestIterativeMethods();
+
     return vbox({
                text("CalcConsole " + BuildInfo::Version),
                text("Built: " + BuildInfo::Timestamp),

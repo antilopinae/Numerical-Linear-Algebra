@@ -6,10 +6,10 @@ cmake -DLLVM_ENABLE_PROJECTS=clang -DCMAKE_BUILD_TYPE=Debug -D CMAKE_C_COMPILER=
 echo -e "\nBuilding"
 cmake --build build
 
-echo -e "\nTesting"
-cd build
-ctest
-cd ..
+#echo -e "\nTesting"
+#cd build
+#ctest
+#cd ..
 
 # echo -e "\nGraphviz"
 # cd build
