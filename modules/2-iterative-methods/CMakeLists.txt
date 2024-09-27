@@ -1,9 +1,12 @@
 message("set iterative_methods")
 
+include(GetMatplotlib_cpp)
+
 add_library(iterative_methods STATIC)
 target_sources(iterative_methods
     PRIVATE
         iterative_methods-impl.cpp
+        matrix.cpp
     PUBLIC
         FILE_SET CXX_MODULES
         FILES
@@ -21,7 +24,7 @@ target_sources(iterative_methods
             ${CMAKE_CURRENT_BINARY_DIR}/iterative_methods_export.h
 )
 
-target_link_libraries(iterative_methods PUBLIC Eigen3::Eigen)
+target_link_libraries(iterative_methods PUBLIC Eigen3::Eigen matplotlib_cpp)
 
 include(Optimized)
 Optimized(iterative_methods)

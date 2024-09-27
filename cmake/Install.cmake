@@ -46,7 +46,7 @@ install(FILES "CalcConfig.cmake"
 )
 
 # CalcConsole runtime
-install(TARGETS calc_console
+install(TARGETS num_console
   RUNTIME COMPONENT runtime
 )
 

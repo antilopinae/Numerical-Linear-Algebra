@@ -1,7 +1,14 @@
 module;
 
-#include <iterative_methods_export.h>   // <-- Generated header added to the global fragment
+#include <iterative_methods_export.h>
 #include <iostream>
+#include "include/matplotlibcpp.h"
+#include <vector>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+#include "matrix.cpp"
+#include <Eigen/Dense>
 
 export module iterative_methods;
 
